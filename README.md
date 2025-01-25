@@ -11,3 +11,10 @@ Time will tell, will update results regularly.
 
 ![afbeelding](https://github.com/user-attachments/assets/f622d202-e6c8-4d7c-b7e1-e6fde0f566a7)
 
+The strategy is not my own strategy.
+Look in this youtube video for the details
+
+https://www.youtube.com/watch?v=7ObVTf3fIUo
+
+
+BR
