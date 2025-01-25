@@ -9,3 +9,5 @@ Backtesting is done by the backtesting.py package.
 Strategy is now running for about two months and the results are ok.
 Time will tell, will update results regularly.
 
+![afbeelding](https://github.com/user-attachments/assets/f622d202-e6c8-4d7c-b7e1-e6fde0f566a7)
+
