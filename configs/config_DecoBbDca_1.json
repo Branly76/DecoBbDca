@@ -1,0 +1,109 @@
+{
+    "trading_mode": "spot",
+    "margin_mode": "",
+    "max_open_trades": 2,
+    "stake_currency": "USDT",
+    "stake_amount": 275,
+    "tradable_balance_ratio": 0.95,
+    "dry_run": true,
+    "dry_run_wallet": 550,
+    "dataformat_ohlcv": "json",
+    "dataformat_trades": "jsongz",
+    "confirm_entry_signal": true,
+    "confirm_exit_signal": true,
+    "use_exit_signal": true,
+    "exit_profit_only": false,
+    "ignore_roi_if_entry_signal": false,
+    "exchange": {
+        "name": "bybit",
+        "sandbox": false,
+        "key": "",
+        "secret": "",
+        "ccxt_config": {
+            "enableRateLimit": true
+        },
+        "ccxt_async_config": {
+            "enableRateLimit": true,
+            "rateLimit": 120
+        },
+
+        "pair_whitelist": [            
+                "XRP\/USDT",
+                "DOGE\/USDT"
+        ],
+    
+    "pair_blacklist": [
+     
+        ]
+    },
+    "pairlists": [
+        {
+            "method": "StaticPairList"
+        }	  
+    ],
+    "timeframe": "5m",
+    "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "market",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60
+    },
+    "entry_pricing": {
+        "price_side": "other",
+        "ask_last_balance": 0,
+        "use_order_book": true,
+        "order_book_top": 1,
+        "check_depth_of_market": {
+            "enabled": false,
+            "bids_to_ask_delta": 1
+        }
+    },
+    "exit_pricing": {
+        "price_side": "same",
+        "use_order_book": true,
+        "order_book_top": 1
+    },
+    "order_time_in_force": {
+        "entry": "gtc",
+        "exit": "gtc"
+    },
+    "trailing_stop": false,
+    "telegram": {
+        "enabled": false,
+        "token": "YOUR_TELEGRAM_BOT_TOKEN",
+        "chat_id": "YOUR_CHAT_ID"
+    },
+    "api_server": {
+        "enabled": true,
+        "listen_ip_address": "0.0.0.0",
+        "listen_port": 8080,
+        "verbosity": "error",
+        "jwt_secret_key": "somethingrandom",
+        "CORS_origins": [],
+        "username": "bb_admin",
+        "password": "bb_admin"
+    },
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "logging": {
+        "loglevel": "DEBUG",
+        "logfile": "/freqtrade/user_data/logs/freqtrade.log"
+    },
+    "logger": {
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "level": "DEBUG",
+        "file": "/path/to/logfile.log",
+        "tensorboard": true
+    },
+
+    "strategy": "DecoBbDca",
+    "bot_name": "DecoBbDca_1",
+    "backtest_starting_balance": 1000,
+    "initial_state": "running",
+    "db_url": "sqlite:///tradesv3_DecoBbDca.sqlite"
+}
