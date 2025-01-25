@@ -1,3 +1,7 @@
+# 
+# this script takes care of the optimalization of the strategy parameters.
+#
+
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta 
