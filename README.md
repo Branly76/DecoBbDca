@@ -4,7 +4,7 @@ The example uses only 2 assets. The assets correlarion is weak.
 Dca is used.
 The backtesting / parameter optimalization is over several years (2022-2024).
 Each asset has his own parameter values.
-Backtesting is done by the backtesting.py package.
+Backtesting is done by the backtesting.py package and the BbDcaStrat_02.py script.
 
 Strategy is now running for about two months and the results are ok.
 Time will tell, will update results regularly.
